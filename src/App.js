@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import VideoList from './component/VideoList ';
+import Navbar from './component/Navbar';
+import WrapComp from './component/WrapComp';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import UploadPage from './Pages/UploadPage';
+import TrandingPage from './Pages/TrandingPage';
+import FavPage from './Pages/FavPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <VideoList/> */}
+
+      <Router>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<WrapComp />} />
+          <Route path="/Treanding" element={<TrandingPage/>} />
+          <Route path="/fav" element={<FavPage/>} />
+          <Route path="/Upload" element={<UploadPage />} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 
