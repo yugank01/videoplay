@@ -242,6 +242,69 @@
 
 /* video Player */
 
+.videosCrd{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+ 
+}
+
+.textTitle{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.textTitle p{
+  margin: 0;
+  padding-left: 10px;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.textLike {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+ gap: 20px;
+ color: whitesmoke;
+
+}
+
+.textLike h4{
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.textVideoCard h3{
+  margin: 0;
+  padding-left: 10px;
+  color: white;
+  text-align: start;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+}
+.textCard{
+  padding-top: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.ProfileCard{
+  padding-top: 10px;
+  height: 40px;
+  width: 40px;
+}
+.ProfileCard img{
+  width: 100%;
+}
+
 
 .videosPlayer{
 background-color: whitesmoke;
