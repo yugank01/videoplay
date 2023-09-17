@@ -16,9 +16,11 @@ export default function Navbar() {
                 </div>
 
                 <div className="dasboard">
+                <Link to="/Dashboard" >
                     <div className="dasImg">
                         <img src={das} alt="" />
                     </div>
+                    </Link>
                     <h3>DASH BOARD</h3>
                 </div>
 
